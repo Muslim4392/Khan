@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1{
+        font-size: 80px;
+        color: blue;  
+    }
+    button{
+        font-size: 35px;
+        border-radius: 30px;
+        width: 100px;
+        
+    }
+</style>
+<body>
+    <h1>0</h1>
+   <button onclick="incr()">inc</button> 
+   <button onclick="dec()">dec</button> 
+   <button onclick="res()">res</button> 
+   
+
+</body>
+<script>
+
+let count=0;
+function incr(){
+    count++;
+  document.querySelector("h1").textContent=count;
+}
+
+
+function dec(){
+    count--;
+    document.querySelector("h1").textContent=count;
+}
+
+
+function res(){
+    count=0;
+    document.querySelector("h1").textContent=count;
+}
+</script>
+</html>
